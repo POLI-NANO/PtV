@@ -1,0 +1,140 @@
+ROBERT v 1.0.5 2026/04/20 12:08:01 
+How to cite: Dalmau, D.; Alegre Requena, J. V. ChemRxiv, 2023, DOI: 10.26434/chemrxiv-2023-k994h
+
+Command line used in ROBERT: python -m robert --predict --csv_test "predictedDevices-FW-time.csv"
+
+
+WARNING! The scikit-learn-intelex accelerator is not installed, the results might vary if it is installed and the execution times might become much longer (if available, use 'pip install scikit-learn-intelex')
+
+o  Representation of predictions and analysis of ML models with the PREDICT module
+
+
+------- Starting model with all variables (No PFI) -------
+
+o  ML model GB_90 (with no PFI filter) and Xy database were loaded, including:
+   - Target value: PCE
+   - Names: index
+   - Model: GB
+   - Descriptors: ['quantity DS HTL', 'ratio P3HT:PCBM', 'P3HT', 'PCBM', 'temperature', 'dew point', 'hummidity', 'time']
+   - Training points: 149
+   - Validation points: 17
+   - Test points: 0
+
+   o  Test set predictedDevices-FW-time.csv loaded successfully, including:
+      - 62 datapoints
+      -  Train set with predicted results: PREDICT/GB_90_train_No_PFI.csv
+      -  Validation set with predicted results: PREDICT/GB_90_valid_No_PFI.csv
+      -  External set with predicted results: PREDICT/csv_test/predictedDevices-FW-time_predicted_No_PFI.csv
+
+   o  Saving graphs and CSV databases in:
+      -  Graph in: PREDICT/Results_GB_90_No_PFI.png
+
+   o  Results saved in PREDICT/Results_GB_90_No_PFI.dat:
+      -  Points Train:Validation = 149:17
+      -  Proportion Train:Validation = 90:10
+      -  Number of descriptors = 8
+      -  Proportion (train+valid.) points:descriptors = 166:8
+      -  Train : R2 = 0.98, MAE = 0.032, RMSE = 0.041
+      -  Valid. : R2 = 0.91, MAE = 0.053, RMSE = 0.065
+
+   o  SHAP plot saved in PREDICT/SHAP_GB_90_No_PFI.png
+   o  SHAP values saved in PREDICT/SHAP_GB_90_No_PFI.dat:
+      -  quantity DS HTL = min: -0.07, max: 0.25
+      -  time = min: -0.06, max: 0.19
+      -  ratio P3HT:PCBM = min: -0.067, max: 0.16
+      -  PCBM = min: -0.023, max: 0.16
+      -  temperature = min: -0.012, max: 0.044
+      -  P3HT = min: -0.1, max: 0.04
+      -  hummidity = min: -0.0093, max: 0.025
+      -  dew point = min: -0.031, max: 0.015
+
+   o  PFI plot saved in PREDICT/PFI_GB_90_No_PFI.png
+   o  PFI values saved in PREDICT/PFI_GB_90_No_PFI.dat:
+      Original score (from model.score, R2) = 0.9
+      -  time = 0.54 +- 0.05
+      -  quantity DS HTL = 0.41 +- 0.1
+      -  ratio P3HT:PCBM = 0.14 +- 0.062
+      -  P3HT = 0.14 +- 0.051
+      -  PCBM = 0.073 +- 0.064
+      -  temperature = 0.042 +- 0.0055
+      -  dew point = 0.027 +- 0.0051
+      -  hummidity = -0.0023 +- 0.0076
+
+   o  Outliers plot saved in PREDICT/Outliers_GB_90_No_PFI.png
+   o  Outlier values saved in PREDICT/Outliers_GB_90_No_PFI.dat:
+      Train: 8 outliers out of 149 datapoints (5.4%)
+      -  5 (2.6 SDs)
+      -  9 (5.0 SDs)
+      -  19 (2.1 SDs)
+      -  21 (2.5 SDs)
+      -  31 (2.1 SDs)
+      -  37 (2.1 SDs)
+      -  75 (2.1 SDs)
+      -  93 (2.3 SDs)
+      Validation: 3 outliers out of 17 datapoints (17.6%)
+      -  7 (3.3 SDs)
+      -  14 (4.0 SDs)
+      -  61 (2.5 SDs)
+
+
+------- Starting model with PFI filter (only important descriptors used) -------
+
+o  ML model GB_90_PFI (with PFI filter) and Xy database were loaded, including:
+   - Target value: PCE
+   - Names: index
+   - Model: GB
+   - Descriptors: ['quantity DS HTL', 'ratio P3HT:PCBM', 'P3HT', 'PCBM', 'time']
+   - Training points: 149
+   - Validation points: 17
+   - Test points: 0
+
+   o  Test set predictedDevices-FW-time.csv loaded successfully, including:
+      - 62 datapoints
+      -  Train set with predicted results: PREDICT/GB_90_train_PFI.csv
+      -  Validation set with predicted results: PREDICT/GB_90_valid_PFI.csv
+      -  External set with predicted results: PREDICT/csv_test/predictedDevices-FW-time_predicted_PFI.csv
+
+   o  Saving graphs and CSV databases in:
+      -  Graph in: PREDICT/Results_GB_90_PFI.png
+
+   o  Results saved in PREDICT/Results_GB_90_PFI.dat:
+      -  Points Train:Validation = 149:17
+      -  Proportion Train:Validation = 90:10
+      -  Number of descriptors = 5
+      -  Proportion (train+valid.) points:descriptors = 166:5
+      -  Train : R2 = 0.97, MAE = 0.049, RMSE = 0.061
+      -  Valid. : R2 = 0.96, MAE = 0.052, RMSE = 0.064
+
+   o  SHAP plot saved in PREDICT/SHAP_GB_90_PFI.png
+   o  SHAP values saved in PREDICT/SHAP_GB_90_PFI.dat:
+      -  quantity DS HTL = min: -0.039, max: 0.23
+      -  ratio P3HT:PCBM = min: -0.062, max: 0.17
+      -  time = min: -0.088, max: 0.16
+      -  PCBM = min: -0.11, max: 0.12
+      -  P3HT = min: -0.091, max: 0.022
+
+   o  PFI plot saved in PREDICT/PFI_GB_90_PFI.png
+   o  PFI values saved in PREDICT/PFI_GB_90_PFI.dat:
+      Original score (from model.score, R2) = 0.92
+      -  ratio P3HT:PCBM = 0.26 +- 0.095
+      -  quantity DS HTL = 0.26 +- 0.074
+      -  time = 0.18 +- 0.16
+      -  PCBM = 0.18 +- 0.061
+      -  P3HT = 0.082 +- 0.036
+
+   o  Outliers plot saved in PREDICT/Outliers_GB_90_PFI.png
+   o  Outlier values saved in PREDICT/Outliers_GB_90_PFI.dat:
+      Train: 8 outliers out of 149 datapoints (5.4%)
+      -  1 (2.5 SDs)
+      -  2 (2.7 SDs)
+      -  5 (2.8 SDs)
+      -  9 (3.6 SDs)
+      -  37 (2.1 SDs)
+      -  54 (2.1 SDs)
+      -  89 (2.3 SDs)
+      -  93 (2.7 SDs)
+      Validation: 1 outliers out of 17 datapoints (5.9%)
+      -  29 (2.2 SDs)
+
+Time PREDICT: 5.6 seconds
+

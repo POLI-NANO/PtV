@@ -1,0 +1,12 @@
+
+   o  PFI plot saved in PREDICT/PFI_MVL_80_No_PFI.png
+   o  PFI values saved in PREDICT/PFI_MVL_80_No_PFI.dat:
+      Original score (from model.score, R2) = 0.73
+      -  ratio P3HT:PCBM = 3.8e+02 +- 3.6e+01
+      -  PCBM = 2.8e+02 +- 1.9e+01
+      -  P3HT = 2.2e+02 +- 3.6e+01
+      -  time = 0.4 +- 0.13
+      -  quantity DS HTL = 0.078 +- 0.026
+      -  dew point = 0.02 +- 0.0092
+      -  hummidity = 0.012 +- 0.0064
+      -  temperature = 0.012 +- 0.031

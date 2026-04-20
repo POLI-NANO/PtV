@@ -1,0 +1,143 @@
+ROBERT v 1.0.5 2026/04/20 11:42:27 
+How to cite: Dalmau, D.; Alegre Requena, J. V. ChemRxiv, 2023, DOI: 10.26434/chemrxiv-2023-k994h
+
+Command line used in ROBERT: python -m robert --predict --csv_test "comb-day30.csv"
+
+
+WARNING! The scikit-learn-intelex accelerator is not installed, the results might vary if it is installed and the execution times might become much longer (if available, use 'pip install scikit-learn-intelex')
+
+o  Representation of predictions and analysis of ML models with the PREDICT module
+
+
+------- Starting model with all variables (No PFI) -------
+
+o  ML model NN_80 (with no PFI filter) and Xy database were loaded, including:
+   - Target value: PCE
+   - Names: index
+   - Model: NN
+   - Descriptors: ['quantity DS HTL', 'ratio P3HT:PCBM', 'P3HT', 'PCBM', 'temperature', 'dew point', 'hummidity', 'time']
+   - Training points: 132
+   - Validation points: 34
+   - Test points: 0
+
+   o  Test set comb-day30.csv loaded successfully, including:
+      - 7000 datapoints
+      -  Train set with predicted results: PREDICT/NN_80_train_No_PFI.csv
+      -  Validation set with predicted results: PREDICT/NN_80_valid_No_PFI.csv
+      -  External set with predicted results: PREDICT/csv_test/comb-day30_predicted_No_PFI.csv
+
+   o  Saving graphs and CSV databases in:
+      -  Graph in: PREDICT/Results_NN_80_No_PFI.png
+
+   o  Results saved in PREDICT/Results_NN_80_No_PFI.dat:
+      -  Points Train:Validation = 132:34
+      -  Proportion Train:Validation = 80:20
+      -  Number of descriptors = 8
+      -  Proportion (train+valid.) points:descriptors = 166:8
+      -  Train : R2 = 0.94, MAE = 0.047, RMSE = 0.068
+      -  Valid. : R2 = 0.81, MAE = 0.071, RMSE = 0.12
+
+   o  SHAP plot saved in PREDICT/SHAP_NN_80_No_PFI.png
+   o  SHAP values saved in PREDICT/SHAP_NN_80_No_PFI.dat:
+      -  quantity DS HTL = min: -0.14, max: 0.2
+      -  ratio P3HT:PCBM = min: -0.15, max: 0.19
+      -  PCBM = min: -0.1, max: 0.15
+      -  time = min: -0.087, max: 0.15
+      -  temperature = min: -0.08, max: 0.083
+      -  hummidity = min: -0.088, max: 0.083
+      -  P3HT = min: -0.056, max: 0.032
+      -  dew point = min: -0.064, max: 0.032
+
+   o  PFI plot saved in PREDICT/PFI_NN_80_No_PFI.png
+   o  PFI values saved in PREDICT/PFI_NN_80_No_PFI.dat:
+      Original score (from model.score, R2) = 0.79
+      -  ratio P3HT:PCBM = 0.83 +- 0.034
+      -  PCBM = 0.67 +- 0.13
+      -  quantity DS HTL = 0.23 +- 0.066
+      -  time = 0.22 +- 0.059
+      -  hummidity = 0.12 +- 0.037
+      -  P3HT = 0.075 +- 0.029
+      -  temperature = 0.002 +- 0.034
+      -  dew point = -0.011 +- 0.018
+
+   o  Outliers plot saved in PREDICT/Outliers_NN_80_No_PFI.png
+   o  Outlier values saved in PREDICT/Outliers_NN_80_No_PFI.dat:
+      Train: 7 outliers out of 132 datapoints (5.3%)
+      -  5 (2.4 SDs)
+      -  9 (3.5 SDs)
+      -  13 (3.1 SDs)
+      -  14 (3.9 SDs)
+      -  72 (4.4 SDs)
+      -  82 (2.8 SDs)
+      -  163 (2.5 SDs)
+      Validation: 3 outliers out of 34 datapoints (8.8%)
+      -  1 (1e+01 SDs)
+      -  30 (2.9 SDs)
+      -  77 (3.8 SDs)
+
+
+------- Starting model with PFI filter (only important descriptors used) -------
+
+o  ML model NN_80_PFI (with PFI filter) and Xy database were loaded, including:
+   - Target value: PCE
+   - Names: index
+   - Model: NN
+   - Descriptors: ['quantity DS HTL', 'ratio P3HT:PCBM', 'P3HT', 'PCBM', 'temperature', 'dew point']
+   - Training points: 132
+   - Validation points: 34
+   - Test points: 0
+
+   o  Test set comb-day30.csv loaded successfully, including:
+      - 7000 datapoints
+      -  Train set with predicted results: PREDICT/NN_80_train_PFI.csv
+      -  Validation set with predicted results: PREDICT/NN_80_valid_PFI.csv
+      -  External set with predicted results: PREDICT/csv_test/comb-day30_predicted_PFI.csv
+
+   o  Saving graphs and CSV databases in:
+      -  Graph in: PREDICT/Results_NN_80_PFI.png
+
+   o  Results saved in PREDICT/Results_NN_80_PFI.dat:
+      -  Points Train:Validation = 132:34
+      -  Proportion Train:Validation = 80:20
+      -  Number of descriptors = 6
+      -  Proportion (train+valid.) points:descriptors = 166:6
+      -  Train : R2 = 0.92, MAE = 0.056, RMSE = 0.077
+      -  Valid. : R2 = 0.76, MAE = 0.067, RMSE = 0.11
+
+   o  SHAP plot saved in PREDICT/SHAP_NN_80_PFI.png
+   o  SHAP values saved in PREDICT/SHAP_NN_80_PFI.dat:
+      -  PCBM = min: -0.19, max: 0.31
+      -  temperature = min: -0.05, max: 0.26
+      -  ratio P3HT:PCBM = min: -0.15, max: 0.19
+      -  quantity DS HTL = min: -0.07, max: 0.18
+      -  dew point = min: -0.11, max: 0.11
+      -  P3HT = min: -0.32, max: 0.091
+
+   o  PFI plot saved in PREDICT/PFI_NN_80_PFI.png
+   o  PFI values saved in PREDICT/PFI_NN_80_PFI.dat:
+      Original score (from model.score, R2) = 0.74
+      -  ratio P3HT:PCBM = 1.6 +- 0.38
+      -  PCBM = 1.2 +- 0.14
+      -  P3HT = 1.0 +- 0.049
+      -  quantity DS HTL = 0.26 +- 0.095
+      -  dew point = 0.14 +- 0.086
+      -  temperature = 0.03 +- 0.055
+
+   o  Outliers plot saved in PREDICT/Outliers_NN_80_PFI.png
+   o  Outlier values saved in PREDICT/Outliers_NN_80_PFI.dat:
+      Train: 8 outliers out of 132 datapoints (6.1%)
+      -  4 (3.1 SDs)
+      -  13 (2.4 SDs)
+      -  30 (2.4 SDs)
+      -  67 (4.2 SDs)
+      -  75 (2.2 SDs)
+      -  80 (2.6 SDs)
+      -  121 (2.5 SDs)
+      -  152 (2.4 SDs)
+      Validation: 3 outliers out of 34 datapoints (8.8%)
+      -  7 (2.9 SDs)
+      -  93 (3.3 SDs)
+      -  161 (7.5 SDs)
+
+Time PREDICT: 7.91 seconds
+

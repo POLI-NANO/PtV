@@ -1,0 +1,8 @@
+
+   o  PFI plot saved in PREDICT/PFI_RF_90_PFI.png
+   o  PFI values saved in PREDICT/PFI_RF_90_PFI.dat:
+      Original score (from model.score, R2) = 0.96
+      -  quantity DS HTL = 0.38 +- 0.074
+      -  PCBM = 0.37 +- 0.14
+      -  ratio P3HT:PCBM = 0.33 +- 0.12
+      -  time = 0.17 +- 0.14

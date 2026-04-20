@@ -1,0 +1,8 @@
+
+   o  Results saved in PREDICT/Results_NN_80_PFI.dat:
+      -  Points Train:Validation = 132:34
+      -  Proportion Train:Validation = 80:20
+      -  Number of descriptors = 6
+      -  Proportion (train+valid.) points:descriptors = 166:6
+      -  Train : R2 = 0.92, MAE = 0.056, RMSE = 0.077
+      -  Valid. : R2 = 0.76, MAE = 0.067, RMSE = 0.11

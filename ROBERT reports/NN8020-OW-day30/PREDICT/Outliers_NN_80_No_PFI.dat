@@ -1,0 +1,15 @@
+
+   o  Outliers plot saved in PREDICT/Outliers_NN_80_No_PFI.png
+   o  Outlier values saved in PREDICT/Outliers_NN_80_No_PFI.dat:
+      Train: 7 outliers out of 132 datapoints (5.3%)
+      -  5 (2.4 SDs)
+      -  9 (3.5 SDs)
+      -  13 (3.1 SDs)
+      -  14 (3.9 SDs)
+      -  72 (4.4 SDs)
+      -  82 (2.8 SDs)
+      -  163 (2.5 SDs)
+      Validation: 3 outliers out of 34 datapoints (8.8%)
+      -  1 (1e+01 SDs)
+      -  30 (2.9 SDs)
+      -  77 (3.8 SDs)

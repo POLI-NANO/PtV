@@ -1,0 +1,9 @@
+
+   o  VERIFY donut plots saved in VERIFY/VERIFY_tests_GB_90_PFI.png
+   o  VERIFY test values saved in VERIFY/VERIFY_tests_GB_90_PFI.dat
+      Results of the VERIFY tests:
+      Original RMSE (valid. set) 0.064 + 25% thres. = 0.08
+         x 5-fold CV: FAILED, RMSE = 0.088, higher than thres.
+         o y_mean: PASSED, RMSE = 0.23, higher than thres.
+         o y_shuffle: PASSED, RMSE = 0.3, higher than thres.
+         o onehot: PASSED, RMSE = 0.23, higher than thres.

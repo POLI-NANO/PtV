@@ -1,0 +1,54 @@
+ROBERT v 1.0.5 2026/04/20 11:40:25 
+How to cite: Dalmau, D.; Alegre Requena, J. V. ChemRxiv, 2023, DOI: 10.26434/chemrxiv-2023-k994h
+
+Command line used in ROBERT: python -m robert --model "[MVL]" --train "[80]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+
+
+WARNING! The scikit-learn-intelex accelerator is not installed, the results might vary if it is installed and the execution times might become much longer (if available, use 'pip install scikit-learn-intelex')
+
+o  Starting tests to verify the prediction ability of the ML models with the VERIFY module
+
+
+------- Starting model with all variables (No PFI) -------
+
+o  ML model MVL_80 (with no PFI filter) and Xy database were loaded, including:
+   - Target value: PCE
+   - Names: index
+   - Model: MVL
+   - Descriptors: ['quantity DS HTL', 'ratio P3HT:PCBM', 'P3HT', 'PCBM', 'temperature', 'dew point', 'hummidity', 'time']
+   - Training points: 132
+   - Validation points: 34
+   - Test points: 0
+
+   o  VERIFY donut plots saved in VERIFY/VERIFY_tests_MVL_80_No_PFI.png
+   o  VERIFY test values saved in VERIFY/VERIFY_tests_MVL_80_No_PFI.dat
+      Results of the VERIFY tests:
+      Original RMSE (valid. set) 0.11 + 25% thres. = 0.14
+         o 5-fold CV: PASSED, RMSE = 0.14, lower than thres.
+         o y_mean: PASSED, RMSE = 0.21, higher than thres.
+         o y_shuffle: PASSED, RMSE = 0.26, higher than thres.
+         o onehot: PASSED, RMSE = 0.21, higher than thres.
+
+
+------- Starting model with PFI filter (only important descriptors used) -------
+
+o  ML model MVL_80_PFI (with PFI filter) and Xy database were loaded, including:
+   - Target value: PCE
+   - Names: index
+   - Model: MVL
+   - Descriptors: ['quantity DS HTL', 'ratio P3HT:PCBM', 'P3HT', 'PCBM', 'time']
+   - Training points: 132
+   - Validation points: 34
+   - Test points: 0
+
+   o  VERIFY donut plots saved in VERIFY/VERIFY_tests_MVL_80_PFI.png
+   o  VERIFY test values saved in VERIFY/VERIFY_tests_MVL_80_PFI.dat
+      Results of the VERIFY tests:
+      Original RMSE (valid. set) 0.1 + 25% thres. = 0.13
+         x 5-fold CV: FAILED, RMSE = 0.14, higher than thres.
+         o y_mean: PASSED, RMSE = 0.21, higher than thres.
+         o y_shuffle: PASSED, RMSE = 0.26, higher than thres.
+         o onehot: PASSED, RMSE = 0.21, higher than thres.
+
+Time VERIFY: 0.8 seconds
+

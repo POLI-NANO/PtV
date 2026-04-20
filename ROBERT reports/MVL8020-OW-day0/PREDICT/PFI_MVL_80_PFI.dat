@@ -1,0 +1,9 @@
+
+   o  PFI plot saved in PREDICT/PFI_MVL_80_PFI.png
+   o  PFI values saved in PREDICT/PFI_MVL_80_PFI.dat:
+      Original score (from model.score, R2) = 0.77
+      -  ratio P3HT:PCBM = 3.7e+02 +- 3.4e+01
+      -  PCBM = 2.7e+02 +- 1.8e+01
+      -  P3HT = 2.2e+02 +- 3.5e+01
+      -  time = 0.27 +- 0.089
+      -  quantity DS HTL = 0.081 +- 0.032

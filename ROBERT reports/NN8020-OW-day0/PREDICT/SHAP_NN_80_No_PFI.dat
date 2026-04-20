@@ -1,0 +1,11 @@
+
+   o  SHAP plot saved in PREDICT/SHAP_NN_80_No_PFI.png
+   o  SHAP values saved in PREDICT/SHAP_NN_80_No_PFI.dat:
+      -  quantity DS HTL = min: -0.14, max: 0.2
+      -  ratio P3HT:PCBM = min: -0.15, max: 0.19
+      -  PCBM = min: -0.1, max: 0.15
+      -  time = min: -0.087, max: 0.15
+      -  temperature = min: -0.08, max: 0.083
+      -  hummidity = min: -0.088, max: 0.083
+      -  P3HT = min: -0.056, max: 0.032
+      -  dew point = min: -0.064, max: 0.032

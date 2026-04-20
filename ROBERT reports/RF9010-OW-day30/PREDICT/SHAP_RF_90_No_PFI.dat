@@ -1,0 +1,11 @@
+
+   o  SHAP plot saved in PREDICT/SHAP_RF_90_No_PFI.png
+   o  SHAP values saved in PREDICT/SHAP_RF_90_No_PFI.dat:
+      -  quantity DS HTL = min: -0.069, max: 0.27
+      -  PCBM = min: -0.039, max: 0.27
+      -  time = min: -0.06, max: 0.18
+      -  ratio P3HT:PCBM = min: -0.14, max: 0.097
+      -  temperature = min: -0.012, max: 0.041
+      -  hummidity = min: -0.01, max: 0.023
+      -  dew point = min: -0.017, max: 0.013
+      -  P3HT = min: -0.016, max: 0.011

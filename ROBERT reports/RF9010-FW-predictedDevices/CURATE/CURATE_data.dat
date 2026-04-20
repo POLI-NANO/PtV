@@ -1,0 +1,43 @@
+ROBERT v 1.0.5 2026/04/20 12:19:40 
+How to cite: Dalmau, D.; Alegre Requena, J. V. ChemRxiv, 2023, DOI: 10.26434/chemrxiv-2023-k994h
+
+Command line used in ROBERT: python -m robert --model "[RF]" --train "[90]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+
+
+o  Starting data curation with the CURATE module
+
+o  Database data_180_days_all_cells.csv loaded successfully, including:
+   - 166 datapoints
+   - 9 accepted descriptors
+   - 1 ignored descriptors
+   - 0 discarded descriptors
+
+o  Analyzing categorical variables
+   - No categorical variables were found
+
+o  Duplication filters activated
+   Excluded datapoints:
+   -  No datapoints were removed
+
+o  Correlation filter activated with these thresholds: thres_x = 0.9, thres_y = 0.001
+   Excluded descriptors:
+   - pressure: R**2 = 0.0 with the PCE values
+
+o  10 columns remaining after applying duplicate and correlation filters:
+   - index
+   - PCE
+   - quantity DS HTL
+   - ratio P3HT:PCBM
+   - P3HT
+   - PCBM
+   - temperature
+   - dew point
+   - hummidity
+   - time
+
+o  The Pearson heatmap was stored in CURATE/Pearson_heatmap.png.
+
+o  The curated database was stored in CURATE/data_180_days_all_cells_CURATE.csv.
+
+Time CURATE: 0.48 seconds
+

@@ -1,0 +1,8 @@
+
+   o  SHAP plot saved in PREDICT/SHAP_GB_90_PFI.png
+   o  SHAP values saved in PREDICT/SHAP_GB_90_PFI.dat:
+      -  quantity DS HTL = min: -0.039, max: 0.23
+      -  ratio P3HT:PCBM = min: -0.062, max: 0.17
+      -  time = min: -0.088, max: 0.16
+      -  PCBM = min: -0.11, max: 0.12
+      -  P3HT = min: -0.091, max: 0.022

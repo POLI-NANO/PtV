@@ -1,0 +1,31 @@
+ROBERT v 1.0.5 2026/04/20 11:40:25 
+How to cite: Dalmau, D.; Alegre Requena, J. V. ChemRxiv, 2023, DOI: 10.26434/chemrxiv-2023-k994h
+
+Command line used in ROBERT: python -m robert --model "[MVL]" --train "[80]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+
+
+WARNING! The scikit-learn-intelex accelerator is not installed, the results might vary if it is installed and the execution times might become much longer (if available, use 'pip install scikit-learn-intelex')
+
+o  Starting generation of ML models with the GENERATE module
+
+o  Database data_180_days_all_cells_CURATE.csv loaded successfully, including:
+   - 166 datapoints
+   - 8 accepted descriptors
+   - 1 ignored descriptors
+   - 0 discarded descriptors
+
+o  Starting heatmap scan with 1 ML models (['MVL']) and 1 training sizes ([80]).
+   Heatmap generation:
+   - 1/6 - Training size: 80, ML model: MVL, seed: 0 
+   - 2/6 - Training size: 80, ML model: MVL, seed: 8 
+   - 3/6 - Training size: 80, ML model: MVL, seed: 19 
+   - 4/6 - Training size: 80, ML model: MVL, seed: 43 
+   - 5/6 - Training size: 80, ML model: MVL, seed: 70 
+   - 6/6 - Training size: 80, ML model: MVL, seed: 233 
+
+o  Heatmap ML models no PFI filter succesfully created in GENERATE/Raw_data
+
+o  Heatmap ML models with PFI filter succesfully created in GENERATE/Raw_data
+
+Time GENERATE: 1.2 seconds
+

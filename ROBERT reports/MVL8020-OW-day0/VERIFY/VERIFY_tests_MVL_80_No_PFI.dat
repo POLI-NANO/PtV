@@ -1,0 +1,9 @@
+
+   o  VERIFY donut plots saved in VERIFY/VERIFY_tests_MVL_80_No_PFI.png
+   o  VERIFY test values saved in VERIFY/VERIFY_tests_MVL_80_No_PFI.dat
+      Results of the VERIFY tests:
+      Original RMSE (valid. set) 0.11 + 25% thres. = 0.14
+         o 5-fold CV: PASSED, RMSE = 0.14, lower than thres.
+         o y_mean: PASSED, RMSE = 0.21, higher than thres.
+         o y_shuffle: PASSED, RMSE = 0.26, higher than thres.
+         o onehot: PASSED, RMSE = 0.21, higher than thres.

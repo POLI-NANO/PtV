@@ -1,0 +1,2 @@
+train,split,model,type,seed,y,names,error_type,X_descriptors,n_estimators,max_depth,max_features,min_samples_split,min_samples_leaf,min_weight_fraction_leaf,ccp_alpha,learning_rate,subsample,validation_fraction,rmse
+90,RND,GB,reg,70,PCE,index,rmse,"['quantity DS HTL', 'ratio P3HT:PCBM', 'P3HT', 'PCBM', 'time']",20,5,0.25,2,1,0,0,0.1,1.0,0.3,0.06387782446439504

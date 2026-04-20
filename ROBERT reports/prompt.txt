@@ -1,0 +1,46 @@
+OW-day0
+
+python -m robert --model "[GB]" --train "[90]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "comb-day0.csv"
+
+python -m robert --model "[MVL]" --train "[80]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "comb-day0.csv"
+
+python -m robert --model "[NN]" --train "[80]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "comb-day0.csv"
+
+python -m robert --model "[RF]" --train "[90]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "comb-day0.csv"
+
+
+OW-day30
+
+python -m robert --model "[GB]" --train "[90]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "comb-day30.csv"
+
+python -m robert --model "[MVL]" --train "[80]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "comb-day30.csv"
+
+python -m robert --model "[NN]" --train "[80]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "comb-day30.csv"
+
+python -m robert --model "[RF]" --train "[90]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "comb-day30.csv"
+
+
+FW-time
+
+python -m robert --model "[GB]" --train "[90]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "predictedDevices-FW-time.csv"
+
+python -m robert --model "[RF]" --train "[90]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "predictedDevices-FW-time.csv"
+
+
+OW-time
+
+python -m robert --model "[GB]" --train "[90]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "predictedDevices-OW-time.csv"
+
+python -m robert --model "[RF]" --train "[90]" --names "index" --ignore "[index]" --y "PCE" --auto_test "False" --csv_name "data_180_days_all_cells.csv"
+python -m robert --predict --csv_test "predictedDevices-OW-time.csv"
